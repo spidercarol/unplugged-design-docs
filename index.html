@@ -26,53 +26,63 @@
 
   <!-- Add your site or application content here -->
   <header>
-    <div>
-      <img src="unpluggedlogo.png" alt="unplugged logo">
-      <nav>
-        <ul>
-          <li><a href="faq/index.html" rel="noopener">FAQ</a></li>
-          <li><a href="about/index.html" rel="noopener">About</a></li>
-        </ul>
-      </nav>
+    <div class="content-wrapper">
+      <a href="#">
+        <img src="unpluggedlogo.png" alt="unplugged logo">
+      </a>
+      <div class="header-divider"></div>
+        <nav>
+          <ul>
+            <li><a href="faq/index.html" rel="noopener">FAQ</a></li>
+            <li><a href="about/index.html" rel="noopener">About</a></li>
+          </ul>
+        </nav>
     </div>
   </header>
 
   <main>
-    <section>
-      <img src="unplugged-retreat.jpg" alt="Walking on nature">
-      <div class="headline"><h1>Retreat from the desk, return refreshed.</h1></div>
-
+    <section class="hero-area">
+      <div class="content-wrapper">
+        <img src="unplugged-retreat.jpg" alt="Walking on nature">
+        <div class="headline"><h1>Retreat from the desk, return refreshed.</h1></div>
+      </div>
     </section>
+
     <aside>
-      <h3>Want to join the next retreat?</h3>
-      <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
-      <h3>Find out more</h3>
-      <p><input type="text" name="name" value="name@email.com"></p>
-      <input type="button" value="Download Itinerary">
+      <div class="content-wrapper">
+        <div class="form-description">
+          <h3>Want to join the next retreat?</h3>
+          <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
+        </div>
+        <div class="form">
+          <h3>Find out more</h3>
+          <p><input type="text" name="name" value="name@email.com"></p>
+          <input type="button" value="Download Itinerary">
+        </div>
+      </div>
     </aside>
+
   </main>   <!-- main wrapper -->
 
   <footer>
     <div class="content-wrapper">
-      <div class="footer-contact">
+      <div class="footer-content">
         <div class="contact">
           <h4>Contact</h4>
-          <div>
-            <div>
-              <address>
-                <p>555-555-5555</p>
-                <p>hello@unplugged.com</p>
-              </address>
-            </div>
-          </div>
-
+          <address>
+            <p>
+              555-555-5555<br>
+              hello@unplugged.com
+            </p>
+          </address>
         </div>
         <div class="social">
           <h4>Social</h4>
-          <p><a href="http://www.facebook.com/yoursite" target="_blank" rel="noopener"></a></p>
-          <p><a href="http://www.twitter.com/yoursite" target="_blank" rel="noopener"></a></p>
-          <p><a href="http://www.instagram.com/yoursite" target="_blank" rel="noopener"></a></p>
-          <!-- other social links here -->
+          <div class="social-icons">
+            <p><a href="http://www.facebook.com/yoursite" target="_blank" rel="noopener"></a></p>
+            <p><a href="http://www.twitter.com/yoursite" target="_blank" rel="noopener"></a></p>
+            <p><a href="http://www.instagram.com/yoursite" target="_blank" rel="noopener"></a></p>
+          </div>
         </div>
       </div>  <!-- footer content ends -->
       <div class="copyright">
