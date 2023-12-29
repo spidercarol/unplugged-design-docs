@@ -89,13 +89,15 @@ textarea {
 
 .content-wrapper {
   outline: 3px dotted red;
-  width: 90%
+  width: 90%;
+  margin: 50px 0;
 }
 
    /* -------------------- Base Header - Footer Styles -------------------- */
 header {
   display: flex;
   justify-content: center;
+  padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -103,12 +105,27 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+}
 
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
+}
+
+header nav {
+  width: 60%;
+  /* ---margin: 50px 0;
+  margin: 10px 0;--*/
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  /*-margin: 20px 0;-*/
+  width: 100%;
+
 }
 
 footer {
@@ -116,6 +133,19 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  /*margin: 50px 0;*/
+}
+
+footer .contact {
+  margin-bottom: 50px;
 }
 
 footer .social-icons {
@@ -128,24 +158,54 @@ footer .social-icons {
 footer .social-icons p {
   display: flex;
   justify-content: center;
-align-items: center;
+  align-items: center;
 }
+
+footer .copyright {
+  margin: 20px 0;
+}
+
+/* -------------------- Mobile Styles - Homepage -------------------- */
+
+/* Hero Area */
 
 .hero-area {
   display: flex;
   justify-content: center;
+  /*padding: 50px 0;*/
 }
+
+/* Aside */
 
 aside {
   display: flex;
   justify-content: center;
+  /*padding: 50px 0;*/
 }
+
+aside .form p {
+  padding: 1em 1em;
+}
+
+aside .form {
+  padding: 20px 0;
+}
+
+/* Features */
 
 .features {
   display: flex;
   justify-content: center;
+  /*padding: 50px 0;*/
+}
 
+.features h2 {
+  margin-bottom: 60px;
+}
 
+.features article {
+  margin: 30px 0;
+  width: 63%;
 }
 
 .features .features-items {
@@ -155,9 +215,33 @@ aside {
   flex-flow: row wrap;
 }
 
+.features p {
+  margin: 0;
+}
+
+.features .features-items .features-item-description {
+  margin: 40px 0 30px 0;
+}
+
+.features .features-items .fontawesome-icons {
+  margin: 30px 0;
+} 
+
+/* Reviews */
+
 .reviews {
   display: flex;
   justify-content: center;
+  /*padding: 50px 0;*/
+}
+
+.revuews h2 {
+  margin-bottom: 40px;
+}
+
+.reviews h3 {
+  margin: 20px 0;
+  width: 55%;
 
 }
 
@@ -170,13 +254,15 @@ aside {
 .mission {
   display: flex;
   justify-content: center;
-
 }
 
 .contact-section {
   display: flex;
   justify-content: center;
+}
 
+.contact-content p {
+  margin: 0;
 }
 
 /* ==========================================================================
@@ -194,7 +280,15 @@ aside {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+  margin: 50px 0 0 0;
+}
 
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
 }
 
 
