@@ -114,6 +114,10 @@ a {
 
 }
 
+h1 {
+  
+}
+
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
@@ -165,6 +169,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
+  background-color: #202322;
 }
 
 header .content-wrapper {
@@ -179,6 +184,7 @@ header .content-wrapper {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  background-color: #3a3a3a;
 }
 
 header nav {
@@ -200,6 +206,9 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #202322;
+  color: #e2e3ed;
+
 }
 
 footer p {
@@ -208,6 +217,8 @@ footer p {
 
 footer .content-wrapper {
   width: 55%;
+  color: #e2e3ed;
+
   /*margin: 50px 0;*/
 }
 
@@ -219,6 +230,8 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: #527158;
+  font-size: 1.3125em;
 
 }
 
@@ -226,6 +239,7 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 footer .copyright {
@@ -239,7 +253,15 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
+  color: #e2e3ed;
   /*padding: 50px 0;*/
+}
+
+.hero-area h1 {
+  font-size: 2.25em;
+  line-height: 2.687;
+  font-weight: 500;
+
 }
 
 /* Aside */
@@ -247,6 +269,9 @@ footer .copyright {
 aside {
   display: flex;
   justify-content: center;
+  background-color: #527158; 
+  color: #e2e3ed;
+
   /*padding: 50px 0;*/
 }
 
@@ -263,6 +288,8 @@ aside .form {
 .features {
   display: flex;
   justify-content: center;
+  color: #e2e3ed;
+
   /*padding: 50px 0;*/
 }
 
@@ -292,6 +319,8 @@ aside .form {
 
 .features .features-items .fontawesome-icons {
   margin: 30px 0;
+  font-size: 3.75em;
+
 } 
 
 /* Reviews */
@@ -299,11 +328,15 @@ aside .form {
 .reviews {
   display: flex;
   justify-content: center;
+  color: #e2e3ed;
+  background-color: #2a423a;
   /*padding: 50px 0;*/
 }
 
-.revuews h2 {
+.reviews h2 {
   margin-bottom: 40px;
+  line-height: 1.875;
+
 }
 
 .reviews h3 {
@@ -321,11 +354,17 @@ aside .form {
 .mission {
   display: flex;
   justify-content: center;
+  background-color: #527158;
+  color: #e2e3ed;
+
+
 }
 
 .contact-section {
   display: flex;
   justify-content: center;
+  color: #e2e3ed;
+  background-color: #2a423a;
 }
 
 .contact-content p {
@@ -340,6 +379,8 @@ aside .form {
 .faq {
   display: flex;
   justify-content: center;
+  background-color: #527158;
+  color: #e2e3ed;
 }
 
 .faq .content-wrapper {
@@ -352,10 +393,16 @@ aside .form {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1.875;
+
 }
 
 .faq-content {
   margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.5;
 }
 
 
@@ -443,6 +490,34 @@ aside .form {
   clear: both;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+  font-size: 1.125;
+  font-weight: 500;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -483,6 +558,11 @@ aside .form {
 
     /* Hero area */
 
+    .hero-area h1 {
+      font-size: 3em;
+      line-height: 3;
+    }
+
     /* Aside */
     aside .content-wrapper {
       margin: 50px 0;
@@ -495,6 +575,11 @@ aside .form {
     aside .content-wrapper .form {        
         width: 40%;        
         margin: 0;
+    }
+
+    aside h3 {
+      font-size: 1.5em;
+      line-height: 1.875;
     }
 
     /* Features */
@@ -511,6 +596,12 @@ aside .form {
     .features .features-item-description {
         width: 50%;
     }
+
+    .features h2 {
+      font-size: 2.25em;
+      line-height: 3;
+
+    }
  
     /* Reviews */
 
@@ -522,6 +613,16 @@ aside .form {
     
     .reviews article div {
         width: 49%;         
+    }
+
+    .reviews h2 {
+      font-size: 2.25em;
+      line-height: 3;
+    }
+
+    .reviews h3 {
+      font-size: 1.5em;
+      line-height: 1.875;
     }
  
     /* Footer */
@@ -540,10 +641,15 @@ aside .form {
  
     footer .contact {
         margin-bottom: 0;
+        font-size: 1.5em;
     }
  
     footer .copyright {
         width: 100%;
+    }
+
+    footer p {
+      line-height: 1.125;
     }
 }
 
@@ -565,6 +671,9 @@ aside .form {
 
 .contact-section .content-wrapper h2 {
   width: 80%;
+  font-size: 2.25em;
+  line-height: 3;
+
 }
 
 .contact-content {
@@ -588,6 +697,18 @@ aside .form {
 
 .faq h2 {
   width: 100%
+  font-size: 2.25em;
+  line-height: 3;
+}
+
+.faq h4 {
+  font-size: 0.875em;
+  line-height: 0.984375;
+}
+
+.faq p {
+  font-size: 0.875em;
+  line-height: 0.984375;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -606,6 +727,7 @@ aside .form {
   /* Hero area */
   .hero-area h1 {
     width: 80%;
+    font-size: 3.75em;
   }
 
   /* Aside */
@@ -618,10 +740,15 @@ aside .form {
       width: 30%;        
   }
 
+  aside h3 {
+    font-size: 1.875em;
+  }
+
   /* Features */
 
   .features h2 {
     width: 90%;
+    font-size: 2.25em;
   }
 
   .features article {
@@ -634,6 +761,27 @@ aside .form {
       width: 42%;         
   }
 
+  .reviews h2 {
+    font-size: 2.25em;
+  }
+
+  .reviews h3 {
+    font-size: 1.875em;
+  }
+
+    /* Footer */
+
+    footer h4 {
+      font-size: 1.875em;
+    }
+
+    footer p {
+      font-size: 1.125em;
+      line-height: 1.5;
+    }
+
+
+
 
   /* ==========================================================================
   About Page
@@ -643,13 +791,27 @@ aside .form {
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+    font-size: 3em;
   }
+
+  .mission .contact-content p {
+    font-size: 1.125em;
+    line-height: 1.5;
+  }
+
   /* ==========================================================================
   FAQ Page
   ========================================================================== 
   */
   .faq h2 {
-  width: 100%
+  width: 100%;
+  font-size: 3em;
+  }
+
+  .faq h4, 
+  p {
+    font-size: 1.125em;
+    line-height: 1.125;
   }
 
 }
