@@ -343,8 +343,12 @@ input[type=button] {
 .features .features-items .fontawesome-icons {
   margin: 30px 0;
   font-size: 3.75em;
-
 } 
+
+.features i {
+  margin-bottom: 0;
+
+}
 
 /* Reviews */
 
