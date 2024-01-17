@@ -394,8 +394,9 @@ input[type=button] {
 }
 
 .map figure {
+  width: 100%;
   position: relative;
-  padding-bottom: 75%;
+  padding-bottom: 125%;
   height: 0;
   overflow: hidden;
 }
@@ -744,6 +745,11 @@ input[type=button] {
   font-size: 1.5em;
 }
 
+.map figure {
+  padding-bottom: 55%;
+}
+
+
 /* ==========================================================================
    FAQ Page
    ========================================================================== 
@@ -855,6 +861,10 @@ input[type=button] {
     font-size: 1.875em;
   }
 
+  .map figure {
+    padding-bottom: 47%;
+  }
+  
   /* ==========================================================================
   FAQ Page
   ========================================================================== 
