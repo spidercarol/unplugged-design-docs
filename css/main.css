@@ -98,32 +98,29 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: left;
+  color: #e2e3ed;
+  background-color: #202322;
 }
 
 ul,
 ol {
   list-style-type: none;
   text-transform: uppercase;
-  font-size: 1.125em;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   color: #e2e3ed;
   text-decoration: none;
-
-}
-
-h1 {
-
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
-
-
+  margin: 0;
 }
 
 h3,
@@ -132,13 +129,11 @@ h4 {
   font-size: 1.125em;
   font-weight: 500;
   margin: 20px 0;
-
-
 }
 
 p {
   font-size: 0.875em;
-  line-height: 1.125;
+  line-height: 1.285;
 
 }
 
@@ -238,7 +233,6 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
 }
 
 footer .social-icons p i {
@@ -256,16 +250,16 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
-  color: #e2e3ed;
   background-image: url('../unplugged-retreat.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  min-height: 500px;
 }
 
 .hero-area h1 {
   font-size: 2.25em;
-  line-height: 2.687;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  line-height: 1.2;
   font-weight: 500;
 
 }
@@ -276,7 +270,6 @@ aside {
   display: flex;
   justify-content: center;
   background-color: #527158; 
-  color: #e2e3ed;
 }
 
 aside .form {
@@ -311,10 +304,8 @@ input[type=button] {
 .features {
   display: flex;
   justify-content: center;
-  color: #e2e3ed;
   background: url('../unplugged-retreat-features.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -330,7 +321,6 @@ input[type=button] {
 .features .features-items {
   display: flex;
   justify-content: center;
-  align-items: flex-start ;  
   flex-flow: row wrap;
 }
 
@@ -339,17 +329,9 @@ input[type=button] {
   text-align: center;
 }
 
-.features .features-items .features-item-description {
-  margin: 40px 0 30px 0;
-}
-
-.features .features-items .fontawesome-icons {
-  margin: 30px 0;
-  font-size: 3.75em;
-} 
-
 .features i {
-  margin-bottom: 0;
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 /* Reviews */
@@ -357,14 +339,12 @@ input[type=button] {
 .reviews {
   display: flex;
   justify-content: center;
-  color: #e2e3ed;
   background-color: #2a423a;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
   line-height: 1.875;
-
 }
 
 .reviews h3 {
@@ -383,15 +363,11 @@ input[type=button] {
   display: flex;
   justify-content: center;
   background-color: #527158;
-  color: #e2e3ed;
-
-
 }
 
 .contact-section {
   display: flex;
   justify-content: center;
-  color: #e2e3ed;
   background-color: #2a423a;
 }
 
@@ -424,7 +400,6 @@ input[type=button] {
   display: flex;
   justify-content: center;
   background-color: #527158;
-  color: #e2e3ed;
 }
 
 .faq .content-wrapper {
@@ -437,8 +412,7 @@ input[type=button] {
 
 .faq h2 {
   margin-bottom: 40px;
-  line-height: 1.875;
-
+  line-height: 1;
 }
 
 .faq-content {
@@ -623,7 +597,7 @@ input[type=button] {
 
     .hero-area h1 {
       font-size: 3em;
-      line-height: 3;
+      line-height: 1.2;
       margin: 0;
     }
 
@@ -643,7 +617,7 @@ input[type=button] {
 
     aside h3 {
       font-size: 1.5em;
-      line-height: 1.875;
+      line-height: 1.2;
     }
 
     /* Features */
@@ -679,6 +653,7 @@ input[type=button] {
 
     .reviews h2 {
       width: 85%;
+      line-height: 1;
     }
 
     .reviews h3 {
@@ -690,14 +665,12 @@ input[type=button] {
 
     footer .content-wrapper {
         width: 65%;
-        margin: 100px 0;
     }
     
     footer .footer-content {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-direction: row;
     }
  
     footer .contact {
@@ -713,10 +686,15 @@ input[type=button] {
         width: 100%;
     }
 
+    footer .social-icons {
+      width: 12.5em;
+      justify-content: space-between;  
+    }
+
     footer p {
       line-height: 1.285;
     }
-}
+
 
 /* ==========================================================================
    About Page
@@ -736,8 +714,6 @@ input[type=button] {
 
 .contact-section .content-wrapper h2 {
   width: 80%;
-  font-size: 2.25em;
-
 }
 
 .contact-content {
@@ -776,6 +752,7 @@ input[type=button] {
 .faq p {
   font-size: 0.875em;
   line-height: 0.984375;
+}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -867,7 +844,7 @@ input[type=button] {
   }
 
   .map figure {
-    padding-bottom: 47%;
+    padding-bottom: 37.5%;
   }
   
   /* ==========================================================================
